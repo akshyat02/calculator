@@ -1,0 +1,89 @@
+<!-- version 0.1.0 -->
+<!-- Calculator - By @akshyat -->
+<!DOCTYPE html>
+<html data-theme="light">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+				<title>Calculator - By Akshyat</title>
+				<link rel="stylesheet" href="cal.css">
+				<script src="cal.js"></script>
+				<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+				
+				<script>
+								
+				</script>
+</head>
+<body>
+				<div id="load-con">
+								<div id="load">Sorry, this calculator website only supports portrait <i class="fa-solid fa-mobile-screen-button"></i> screens.<br>
+								<br>This will be solved in coming version.
+								</div>
+				</div>
+				<form name="cal">
+				<textarea name="display" id="disp" value="0" disabled>0</textarea>
+				<div id="texts">
+				<span class="bgtext">CALCULATOR</span>
+				<span id="rights" class="bgtext">Made with 
+					<i class="fa-solid fa-heart"></i>
+					 by Akshyat Patra</span>
+				</div>
+				<table>
+								
+								<tr>
+												<td id="reset" onclick="cal.disp.value='0'">
+																<i class="fa-solid fa-trash-can"></i>
+												</td>
+												<td id="backspace" onclick="back()">
+																<i class="fa-solid fa-circle-arrow-left"></i>
+												</td>
+												<td id="theme-toggle" onclick="toggling();icon(this)">
+																<i class="fa-solid fa-moon"></i>
+												</td>
+												<td id="divide" class="operator" onclick="cal.disp.value+='/'">
+																<i class="fa-solid fa-divide"></i>
+												</td>
+								</tr>
+								<tr>
+												<td id="7" class="num" onclick="cal.disp.value+='7'">7</td>
+												<td id="8" class="num" onclick="cal.disp.value+='8'">8</td>
+												<td id="9" class="num" onclick="cal.disp.value+='9'">9</td>
+												<td id="mul" class="operator" onclick="cal.disp.value+='*'">
+																<i class="fa-solid fa-xmark"></i>
+												</td>
+								</tr>
+								<tr>
+												<td id="4" class="num" onclick="cal.disp.value+='4'">4</td>
+												<td id="5" class="num" onclick="cal.disp.value+='5'">5</td>
+												<td id="6"class="num" onclick="cal.disp.value+='6'">6</td>
+												<td id="minus" class="operator" onclick="cal.disp.value+='-'">
+																<i class="fa-solid fa-minus"></i>
+												</td>
+								</tr>
+								<tr>
+												<td id="1" class="num" onclick="cal.disp.value+='1'">1</td>
+												<td id="2" class="num" onclick="cal.disp.value+='2'">2</td>
+												<td id="3" class="num" onclick="cal.disp.value+='3'">3</td>
+												<td id="plus" class="operator" onclick="cal.disp.value+='+'">
+																<i class="fa-solid fa-plus"></i>
+												</td>
+								</tr>
+								<tr>
+												<td id="per" class="operator" onclick="cal.disp.value+='%'">
+																<i class="fa-solid fa-percent"></i>
+												</td>
+												<td id="0" class="num" onclick="cal.disp.value+='0'">0</td>
+												<td id="decpoint" onclick="cal.disp.value+='.'">.</td>
+												<td id="equals" class="operator" onclick="equals()">
+																<i class="fa-solid fa-equals"></i>
+												</td>
+								</tr>
+								
+				</table>
+				</form>
+				
+</body>
+</html>
