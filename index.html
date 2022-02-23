@@ -1,4 +1,4 @@
-<!-- version 1.0.0 -->
+<!-- version 1.1.0 -->
 <!-- Calculator - By @akshyatpatra -->
 <!DOCTYPE html>
 <html data-theme="light">
@@ -27,7 +27,7 @@
 	</div>
 <table>
 	<tr>
-		<td id="reset" onclick="cal.disp.value='0'">
+		<td id="reset">
 			<i class="fa-solid fa-trash-can"></i>
 		</td>
 		<td id="backspace" onclick="back()">
@@ -36,7 +36,7 @@
 		<td id="theme-toggle" onclick="toggling();icon(this)">
 			<i class="fa-solid fa-moon"></i>
 		</td>
-		<td id="divide" class="operator" onclick="cal.disp.value+='/'">
+		<td id="divide/" class="operator">
 			<i class="fa-solid fa-divide"></i>
 		</td>
 		</tr>
@@ -44,7 +44,7 @@
 		<td id="7" class="num">7</td>
 		<td id="8" class="num">8</td>
 		<td id="9" class="num">9</td>
-		<td id="mul" class="operator" onclick="cal.disp.value+='*'">
+		<td id="mul*" class="operator">
 			<i class="fa-solid fa-xmark"></i>
 		</td>
 	</tr>
@@ -52,7 +52,7 @@
 		<td id="4" class="num">4</td>
 		<td id="5" class="num">5</td>
 		<td id="6" class="num">6</td>
-		<td id="minus" class="operator" onclick="cal.disp.value+='-'">
+		<td id="minus-" class="operator">
 			<i class="fa-solid fa-minus"></i>
 		</td>
 	</tr>
@@ -60,16 +60,16 @@
 		<td id="1" class="num">1</td>
 		<td id="2" class="num">2</td>
 		<td id="3" class="num">3</td>
-		<td id="plus" class="operator" onclick="cal.disp.value+='+'">
+		<td id="plus+" class="operator">
 			<i class="fa-solid fa-plus"></i>
 		</td>
 	</tr>
 	<tr>
-		<td id="per" class="operator" onclick="cal.disp.value+='%'">
+		<td id="per%" class="operator">
 			<i class="fa-solid fa-percent"></i>
 		</td>
 		<td id="0" class="num">0</td>
-		<td id="decpoint" onclick="cal.disp.value+='.'">.</td>
+		<td id="decpoint">.</td>
 		<td id="equals" class="operator" onclick="equals()">
 			<i class="fa-solid fa-equals"></i>
 		</td>
