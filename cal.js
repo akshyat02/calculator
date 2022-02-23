@@ -46,6 +46,10 @@ for (let i = op.length-2; i >= 0; i--) {
 		dpcounter = 0;
 		if (opcounter == 0) {
 			d.value += this.id.substring(this.id.length-1,this.id.length);
+			opcounter = 1;
+		}else{
+			d.value = d.value.substring(0,d.value.length-1);
+			d.value += this.id.substring(this.id.length-1,this.id.length);
 		}
 	})
 	
