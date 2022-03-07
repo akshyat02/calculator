@@ -76,6 +76,7 @@ body{
 }
 textarea{
     position: relative;
+    resize: none;
     height: 15vh;
     margin: 5vw;
     padding: 15px;
@@ -134,7 +135,37 @@ td:active{
     transform: translateX(-50%) translateY(-50%);
     background-color: var(--bg);
 }
-@media screen and (max-height:calc(1.47*100vw)){
+/* Media Queries for responsive design */
+@media screen and (max-height:calc(0.72*100vw)){
+    html{
+        font-size: 5vh;
+    }
+    textarea{
+        position: absolute;
+        width: calc(90vw - 74vh);
+        height: 50vh;
+        font-size: 2em;
+        right: 75vh;
+    }
+    #texts{
+        position: absolute;
+        width: calc(90vw - 74vh);
+        height: 10vh;
+        bottom: 18vh;
+        right: 80vh;
+    }
+    table{
+        width: 72.12vh;
+        height: 90vh;
+        left: auto; bottom: auto;
+        top: 5vh; right: 5vh;
+    }
+    td{
+        height: 0vh;
+        width: 15vh;
+    }
+}
+@media screen and (min-height:calc(0.72*100vw)) and (max-height:calc(1.47*100vw)){
     #load-con{display: block;}
     #disp, .bgtext, table{display: none;}
 }
